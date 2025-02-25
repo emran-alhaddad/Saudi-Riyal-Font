@@ -19,17 +19,17 @@ Below is a screenshot of the example demo page:
 ---
 
 ## 📌 Features  
-✅ **Cross-Platform Compatibility** – Works on Windows, macOS, Linux, Web, and Mobile.  
-✅ **Unicode Private Use Area (`U+E900`)** – Ensures seamless integration.  
-✅ **Web-Optimized** – Includes `.woff`, `.woff2`, and `.ttf` formats for fast loading.  
-✅ **NPM Support** – Easily install via NPM for web projects.  
-✅ **CDN Hosting** – Use without installation via **jsDelivr** or **unpkg**.  
-✅ **Open Source & Free** – Released under the **SIL Open Font License (OFL)**.  
-✅ **Customizable** – Modify and enhance as needed.  
+👉 **Cross-Platform Compatibility** – Works on Windows, macOS, Linux, Web, and Mobile.  
+👉 **Unicode Private Use Area (`U+E900`)** – Ensures seamless integration.  
+👉 **Web-Optimized** – Includes `.woff`, `.woff2`, and `.ttf` formats for fast loading.  
+👉 **NPM Support** – Easily install via NPM for web projects.  
+👉 **CDN Hosting** – Use without installation via **jsDelivr** or **unpkg**.  
+👉 **Open Source & Free** – Released under the **SIL Open Font License (OFL)**.  
+👉 **Customizable** – Modify and enhance as needed.  
 
 ---
 
-## 📥 Installation & Usage  
+## 💍 Installation & Usage  
 
 ### **1️⃣ Install via NPM (Recommended for Web Developers)**  
 The easiest way to use this font in a web project is by installing it via NPM:  
@@ -91,32 +91,41 @@ Alternatively, insert the symbol using Unicode:
 
 ---
 
-### **3️⃣ Desktop Installation (Windows & Mac)**  
-1. Download `saudi_riyal.ttf`.  
-2. **Windows:** Right-click → "Install".  
-3. **Mac:** Double-click the file → "Install".  
-4. Open **Microsoft Word, Photoshop, or any editor**, select `"saudi_riyal"` as the font, and type `E900`.  
+## 📝 Setup for Desktop & Mobile Devices  
 
----
+### **3️⃣ Download & Install on Windows, Mac, Linux, Android, iOS**  
+#### **📂 Download Saudi Riyal Font Files:**  
+📂 **[Download Saudi Riyal Font](https://github.com/emran-alhaddad/Saudi-Riyal-Font/releases/latest)**  
 
-### **4️⃣ Desktop Installation (Linux)**  
+### **🖥 Windows Installation**  
+1. Download `saudi_riyal.ttf` from the link above.  
+2. Right-click the file and select **"Install"**.  
+3. Open **Microsoft Word, Photoshop, or any editor**, select **"Saudi Riyal"** as the font.  
+4. Type `E900` and press `Alt + X` to display the Saudi Riyal symbol.  
+
+### **💻 Mac Installation**  
+1. Download `saudi_riyal.ttf` from the link above.  
+2. Double-click the file and select **"Install Font"**.  
+3. Open any text editor (e.g., Pages, Photoshop), select **"Saudi Riyal"** as the font.  
+4. Type `E900` to insert the Riyal symbol.  
+
+### **🐧 Linux Installation**  
 1. Copy the font to your local fonts directory:  
    ```sh
    cp saudi_riyal.ttf ~/.fonts/
    fc-cache -fv
-   ```
+   ```  
 2. Use it in applications that support custom fonts.  
 
+### **🌐 Mobile Installation (Android & iOS)**  
+1. Download `saudi_riyal.ttf` to your phone.  
+2. **Android:** Use **iFont** or **FontFix** apps to install.  
+3. **iOS:** Install via **iFont** or a font management app.  
+4. Use in supported apps like Word, Photoshop, or Notes.  
+
 ---
 
-### **5️⃣ Usage in Microsoft Word**  
-1. Install the font as mentioned above.  
-2. Type `E900`, then press `Alt + X` (Windows) or `Cmd + Option + X` (Mac).  
-3. The Saudi Riyal symbol will appear.  
-
----
-
-## 🛠️ Development & Contributions  
+## 🌟 Development & Contributions  
 We welcome **contributions!** To contribute:  
 1. **Fork** this repository.  
 2. **Make your changes** (improve the font, add glyphs).  
@@ -126,7 +135,7 @@ If you find issues, please report them via the [Issues](https://github.com/emran
 
 ---
 
-## 📜 License  
+## 📚 License  
 This font is released under the **SIL Open Font License (OFL)**.  
 ✅ **Attribution is required!**  
 
