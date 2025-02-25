@@ -119,4 +119,3 @@ Saudi Riyal Font © Emran Alhaddad - Used under SIL Open Font License 1.1
 ---
 
 🚀 **Enjoy the Saudi Riyal Font!**  
-```
