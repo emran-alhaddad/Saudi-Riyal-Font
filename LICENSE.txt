@@ -1,0 +1,103 @@
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+===================================================
+
+PREAMBLE
+---------
+The goals of the Open Font License (OFL) are to stimulate worldwide 
+development of collaborative font projects, to support the font 
+creation efforts of academic and linguistic communities, and to 
+provide a free and open framework in which fonts may be shared and 
+improved in partnership with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and 
+redistributed freely as long as they are not sold by themselves. The 
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved 
+names are not used by derivative works. The fonts and derivatives, 
+however, cannot be released under any other type of license. The 
+requirement for fonts to remain under this license does not apply 
+to any document created using the fonts or their derivatives.
+
+---
+
+**OWNER & AUTHORSHIP**
+-----------------------
+This font software, named **"Saudi Riyal Font"**, was created by:
+
+📌 **Emran Alhaddad** (GitHub: [EmranAlhadda](https://github.com/EmranAlhadda))  
+📧 **Email:** emran.alhaddad.dev@gmail.com  
+
+Any **use, modification, or distribution** of this font must include a **clear and visible attribution** to the original creator, **Emran Alhaddad**.
+
+**Example of Attribution:**
+
+Saudi Riyal Font © Emran Alhaddad - Used under SIL Open Font License 1.1
+
+
+If this font is used in **published materials, commercial projects, software, or any derivative work**, the **original author must be credited** either in the project files or within a visible section (e.g., About page, documentation, or software credits).
+
+---
+
+DEFINITIONS
+-----------
+"Font Software" refers to the set of files released by the Copyright 
+Holder(s) under this license and clearly marked as such. This may 
+include source files, build scripts, and documentation.
+
+"Original Version" refers to the collection of Font Software components 
+as distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting, 
+or substituting — in part or in whole — any of the components of the 
+Original Version, by changing formats, or by porting the Font Software 
+to a new environment.
+
+"Author" refers to any designer, engineer, programmer, technical 
+writer, or other person who contributed to the Font Software.
+
+---
+
+PERMISSION & CONDITIONS
+-----------------------
+Permission is hereby granted, free of charge, to use, copy, modify, 
+merge, publish, distribute, and sublicense the Font Software, subject 
+to the following conditions:
+
+1) **Attribution is required** – Any usage, modification, or distribution **must** credit the original creator, **Emran Alhaddad**.
+
+2) The Font Software must not be sold by itself. It may be included in 
+   software bundles or distributions, but the fonts themselves cannot be 
+   individually sold.
+
+3) Any Modified Version must clearly state that it is a derivative of 
+   the original font, and must not use the same primary name as the 
+   Original Version.
+
+4) The names of the original authors and contributors must not be 
+   misrepresented.
+
+5) The Font Software, including any Modified Version, must always be 
+   distributed under this same Open Font License (OFL) and cannot be 
+   sublicensed under a different license.
+
+6) Fonts and derivative works may be embedded in documents, but this 
+   does not grant users any right to extract or reuse the fonts apart 
+   from the document.
+
+7) The Font Software is provided "as is," without warranty of any kind, 
+   express or implied, including but not limited to the warranties of 
+   merchantability, fitness for a particular purpose, or non-infringement.
+
+---
+
+TERMINATION
+-----------
+This license becomes null and void if any of the above conditions are 
+violated. 
+
+---
+
+ADDITIONAL INFORMATION
+----------------------
+For more information, visit:  
+https://scripts.sil.org/OFL
