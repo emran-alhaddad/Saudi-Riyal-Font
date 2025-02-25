@@ -95,7 +95,7 @@ Alternatively, insert the symbol using Unicode:
 
 ### **3️⃣ Download & Install on Windows, Mac, Linux, Android, iOS**  
 #### **📂 Download Saudi Riyal Font Files:**  
-📂 **[Download Saudi Riyal Font](https://github.com/emran-alhaddad/Saudi-Riyal-Font/releases/latest)**  
+📂 **[Download Saudi Riyal Font](https://github.com/emran-alhaddad/Saudi-Riyal-Font/blob/main/fonts/saudi_riyal.ttf)**  
 
 ### **🖥 Windows Installation**  
 1. Download `saudi_riyal.ttf` from the link above.  
