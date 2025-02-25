@@ -23,12 +23,13 @@ Below is a screenshot of the example demo page:
 ✅ **Unicode Private Use Area (`U+E900`)** – Ensures seamless integration.  
 ✅ **Web-Optimized** – Includes `.woff`, `.woff2`, and `.ttf` formats for fast loading.  
 ✅ **NPM Support** – Easily install via NPM for web projects.  
+✅ **CDN Hosting** – Use without installation via **jsDelivr** or **unpkg**.  
 ✅ **Open Source & Free** – Released under the **SIL Open Font License (OFL)**.  
 ✅ **Customizable** – Modify and enhance as needed.  
 
 ---
 
-## 📥 Download & Installation  
+## 📥 Installation & Usage  
 
 ### **1️⃣ Install via NPM (Recommended for Web Developers)**  
 The easiest way to use this font in a web project is by installing it via NPM:  
@@ -57,27 +58,35 @@ Alternatively, insert the symbol using Unicode:
 
 ---
 
-### **2️⃣ Web Usage (Manual Installation)**  
-Use the font in your **HTML** with the predefined class:  
+### **2️⃣ Web Usage via CDN (No Installation Needed)**  
+
+#### **📌 Use jsDelivr CDN**
 ```html
-<span class="icon-saudi_riyal"></span>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@emran-alhaddad/saudi-riyal-font/index.css">
 ```
 
-Alternatively, apply the font manually using Unicode:  
+#### **📌 Use unpkg CDN**
 ```html
-<span style="font-family: 'saudi_riyal'">&#xE900;</span>
+<link rel="stylesheet" href="https://unpkg.com/@emran-alhaddad/saudi-riyal-font/index.css">
 ```
 
-#### **Include the font in CSS (if needed)**
-```css
-@font-face {
-    font-family: 'saudi_riyal';
-    src: url('fonts/saudi_riyal.woff2') format('woff2'),
-         url('fonts/saudi_riyal.woff') format('woff'),
-         url('fonts/saudi_riyal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+#### **CDN HTML Example:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudi Riyal Font Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@emran-alhaddad/saudi-riyal-font/index.css">
+</head>
+<body>
+
+    <h1>Saudi Riyal Font Demo</h1>
+    <p>Price: <span class="icon-saudi_riyal"></span> 100</p>
+
+</body>
+</html>
 ```
 
 ---
@@ -104,16 +113,6 @@ Alternatively, apply the font manually using Unicode:
 1. Install the font as mentioned above.  
 2. Type `E900`, then press `Alt + X` (Windows) or `Cmd + Option + X` (Mac).  
 3. The Saudi Riyal symbol will appear.  
-
----
-
-## 🌍 CDN Hosting (Optional)  
-For quick web implementation, use a CDN like GitHub Pages or upload it to Google Fonts (pending approval).  
-
-Example using a direct link:  
-```html
-<link href="https://cdn.example.com/saudi_riyal.css" rel="stylesheet">
-```
 
 ---
 
