@@ -1,6 +1,6 @@
 # 🇸🇦 Saudi Riyal Font  
 
-**The official open-source font for the Saudi Riyal currency symbol.**  
+**A community-maintained open-source font for the Saudi Riyal currency symbol.**  
 
 This font allows you to use the **Saudi Riyal symbol** in websites, applications, and documents, ensuring compatibility where the symbol is not natively supported.  
 
