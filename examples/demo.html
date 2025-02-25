@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض خط الريال السعودي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>عرض خط الريال السعودي</h1>
+        <p>يظهر هذا العرض التوضيحي كيفية استخدام رمز الريال السعودي باستخدام خط <strong>'saudi_riyal'</strong>.</p>
+
+        <!-- English Use Cases -->
+        <div class="use-case">
+            <h2>Basic Usage</h2>
+            <p class="riyals">Price: <span class="icon-saudi_riyal">100</span></p>
+        </div>
+
+        <div class="use-case">
+            <h2>Heading with Riyal Symbol</h2>
+            <h1 class="riyals">Total: <span class="icon-saudi_riyal">500</span></h1>
+        </div>
+
+        <div class="use-case">
+            <h2>Inline Text</h2>
+            <p>The total cost is <span class="icon-saudi_riyal">250</span> including taxes.</p>
+        </div>
+
+        <!-- Arabic Use Cases -->
+        <div class="use-case">
+            <h2>استخدام باللغة العربية</h2>
+            <p class="riyals">السعر: <span class="icon-saudi_riyal">١٠٠</span></p>
+        </div>
+
+        <div class="use-case">
+            <h2>العنوان مع رمز الريال</h2>
+            <h1 class="riyals">المجموع: <span class="icon-saudi_riyal">٥٠٠</span></h1>
+        </div>
+
+        <div class="use-case">
+            <h2>النص المضمّن</h2>
+            <p>التكلفة الإجمالية هي <span class="icon-saudi_riyal">٢٥٠</span> شامل الضريبة.</p>
+        </div>
+
+        <!-- Dynamic Font Size Control -->
+        <div class="use-case">
+            <h2>تعديل حجم الخط</h2>
+            <input type="range" id="fontSizeSlider" min="12" max="100" value="32">
+            <span id="fontSizeValue">٣٢px</span>
+            <p class="dynamic-text">الرصيد المتبقي: <span class="icon-saudi_riyal">١٢٠٠</span> </p>
+        </div>
+
+        <!-- Super and Subscript -->
+        <div class="use-case">
+            <h2>رفع وخفض النص</h2>
+            <button onclick="toggleSuperSub('super')">مرتفع</button>
+            <button onclick="toggleSuperSub('sub')">منخفض</button>
+            <p class="super-sub">الضريبة: <span class="icon-saudi_riyal"></span><span id="superSub">٥٠</span> </p>
+        </div>
+
+        <!-- Change Color -->
+        <div class="use-case">
+            <h2>تغيير لون الرمز</h2>
+            <input type="color" id="colorPicker" value="#2f704a">
+            <p>اختر لونًا لتطبيقه على رمز الريال السعودي.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

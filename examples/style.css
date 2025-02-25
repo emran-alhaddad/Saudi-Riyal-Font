@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'saudi_riyal';
+  src:  url('../fonts/saudi_riyal.eot?bdfc4l');
+  src:  url('../fonts/saudi_riyal.eot?bdfc4l#iefix') format('embedded-opentype'),
+        url('../fonts/saudi_riyal.ttf?bdfc4l') format('truetype'),
+        url('../fonts/saudi_riyal.woff?bdfc4l') format('woff'),
+        url('../fonts/saudi_riyal.svg?bdfc4l#saudi_riyal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Icon styling */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'saudi_riyal' !important;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dynamic color support */
+.icon-saudi_riyal:before {
+  content: "\e900";
+  color: var(--riyals-color, #2f704a); /* Default color */
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  direction: rtl; /* Supports Arabic text */
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  color: #2f704a;
+}
+
+/* Styling for cases */
+.use-case {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.dynamic-text {
+  font-size: 32px;
+}
+
+/* Super and Subscript - Smaller icon */
+.super-sub .icon-saudi_riyal {
+  font-size: 0.7em;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background: #2f704a;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #235636;
+}
+
+input[type="color"] {
+  border: none;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
