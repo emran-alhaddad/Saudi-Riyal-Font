@@ -8,13 +8,16 @@ This font allows you to use the **Saudi Riyal symbol** in websites, applications
 
 ---
 
-<!-- Package Information -->
+**📦 Package Information**
+
 [![NPM Version](https://img.shields.io/npm/v/@emran-alhaddad/saudi-riyal-font)](https://www.npmjs.com/package/@emran-alhaddad/saudi-riyal-font)
 [![NPM Downloads](https://img.shields.io/npm/dt/@emran-alhaddad/saudi-riyal-font?label=npm%20downloads)](https://www.npmjs.com/package/@emran-alhaddad/saudi-riyal-font)
 [![jsDelivr Hits](https://img.shields.io/jsdelivr/npm/hm/@emran-alhaddad/saudi-riyal-font)](https://www.jsdelivr.com/package/npm/@emran-alhaddad/saudi-riyal-font)
 [![Font Size](https://img.shields.io/badge/Font%20Size-Lightweight-success)](https://github.com/emran-alhaddad/Saudi-Riyal-Font)
 [![Unicode](https://img.shields.io/badge/Unicode-U%2BE900-blueviolet)](https://emran-alhaddad.github.io/Saudi-Riyal-Font/examples/demo.html)
-<!-- Repository Stats -->
+
+**📊 Repository Stats**
+
 [![GitHub Stars](https://img.shields.io/github/stars/emran-alhaddad/Saudi-Riyal-Font)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/emran-alhaddad/Saudi-Riyal-Font)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/network/members)
 [![GitHub Issues](https://img.shields.io/github/issues/emran-alhaddad/Saudi-Riyal-Font)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/issues)
@@ -22,17 +25,23 @@ This font allows you to use the **Saudi Riyal symbol** in websites, applications
 [![Contributors](https://img.shields.io/github/contributors/emran-alhaddad/Saudi-Riyal-Font)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/graphs/contributors)
 [![GitHub release](https://img.shields.io/github/release/emran-alhaddad/Saudi-Riyal-Font)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/emran-alhaddad/Saudi-Riyal-Font)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/commits)
-<!-- Compatibility -->
+
+**🔄 Compatibility**
+
 [![Browsers Support](https://img.shields.io/badge/Browsers-Chrome%20%7C%20Firefox%20%7C%20Safari%20%7C%20Edge-brightgreen)](https://emran-alhaddad.github.io/Saudi-Riyal-Font/examples/demo.html)
 [![Platforms](https://img.shields.io/badge/Platforms-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android%20%7C%20iOS-blue)](https://github.com/emran-alhaddad/Saudi-Riyal-Font)
 [![TypeScript Ready](https://img.shields.io/badge/TypeScript-Ready-blue)](https://www.typescriptlang.org/)
-<!-- Project Status -->
+
+**📈 Project Status**
+
 [![License](https://img.shields.io/badge/license-OFL--1.1-blue)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/blob/main/LICENSE.txt)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Femran-alhaddad.github.io%2FSaudi-Riyal-Font%2Fexamples%2Fdemo.html)](https://emran-alhaddad.github.io/Saudi-Riyal-Font/examples/demo.html)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/graphs/commit-activity)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/emran-alhaddad/Saudi-Riyal-Font/pulls)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-<!-- Social -->
+
+**👥 Social**
+
 [![Twitter Follow](https://img.shields.io/twitter/follow/EmranAlhaddad?style=social)](https://twitter.com/EmranAlhaddad)
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red)](https://github.com/emran-alhaddad)
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/emran-alhaddad/Saudi-Riyal-Font)
