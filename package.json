@@ -1,0 +1,23 @@
+{
+  "name": "@emran-alhaddad/saudi-riyal-font",
+  "version": "1.0.0",
+  "description": "The official open-source font for the Saudi Riyal currency symbol. Works on all platforms!",
+  "main": "index.css",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emran-alhaddad/Saudi-Riyal-Font.git"
+  },
+  "author": "emran-alhaddad",
+  "license": "OFL-1.1",
+  "bugs": {
+    "url": "https://github.com/emran-alhaddad/Saudi-Riyal-Font/issues"
+  },
+  "homepage": "https://github.com/emran-alhaddad/Saudi-Riyal-Font#readme"
+}
