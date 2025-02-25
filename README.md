@@ -1,10 +1,32 @@
+### **🚀 Updated `README.md` with Live Demo & Screenshot**  
+
+This update ensures:
+✅ **Live demo link** is included.  
+✅ **Screenshot (`examples/example-demo.png`)** is displayed.  
+✅ **Clarification on proper font usage in CSS & HTML.**  
+✅ **Correction in attribution policy (attribution is now required).**  
+
+---
+
+### **✅ `README.md`**
+```md
 # 🇸🇦 Saudi Riyal Font  
 
 **The official open-source font for the Saudi Riyal currency symbol.**  
 
 This font allows you to use the **Saudi Riyal symbol** in websites, applications, and documents, ensuring compatibility where the symbol is not natively supported.  
 
-![Saudi Riyal Symbol](fonts/saudi_riyal.svg)
+![Saudi Riyal Symbol](examples/saudi_riyal-sample.svg)
+
+---
+
+## 🌍 Live Demo  
+🎉 **Check out the live demo here:**  
+🔗 [Saudi Riyal Font Demo](https://emran-alhaddad.github.io/Saudi-Riyal-Font/examples/demo.html)  
+
+Below is a screenshot of the example demo page:  
+
+![Example Demo](examples/example-demo.png)
 
 ---
 
@@ -20,8 +42,17 @@ This font allows you to use the **Saudi Riyal symbol** in websites, applications
 ## 📥 Download & Installation  
 
 ### **1️⃣ Web Usage**  
-Include the font in your **CSS**:  
+Use the font in your **HTML** with the predefined class:  
+```html
+<span class="icon-saudi_riyal"></span>
+```
 
+Alternatively, apply the font manually using Unicode:  
+```html
+<span style="font-family: 'saudi_riyal'">&#xE900;</span>
+```
+
+#### **Include the font in CSS (if needed)**
 ```css
 @font-face {
     font-family: 'saudi_riyal';
@@ -31,16 +62,6 @@ Include the font in your **CSS**:
     font-weight: normal;
     font-style: normal;
 }
-```
-
-Use the font in your HTML:  
-```html
-<span class="icon-saudi_riyal"></span>
-```
-
-Alternatively, insert the symbol using Unicode:  
-```html
-<span style="font-family: 'saudi_riyal'">&#xE900;</span>
 ```
 
 ---
@@ -91,9 +112,16 @@ If you find issues, please report them via the [Issues](https://github.com/emran
 ---
 
 ## 📜 License  
-This font is released under the **SIL Open Font License (OFL)**. You are free to use, modify, and distribute it for both commercial and personal projects.  
+This font is released under the **SIL Open Font License (OFL)**.  
+✅ **Attribution is required!**  
 
-📢 **Attribution is appreciated but not required!** If you use this font, let us know – we'd love to see how it's being used!  
+📌 **Created by:** **Emran Alhaddad**  
+📧 **Contact:** emran.alhaddad.dev@gmail.com  
+
+📢 **Any usage, modification, or distribution must credit the original creator.**  
+```
+Saudi Riyal Font © Emran Alhaddad - Used under SIL Open Font License 1.1
+```
 
 ---
 
@@ -103,3 +131,4 @@ This font is released under the **SIL Open Font License (OFL)**. You are free to
 ---
 
 🚀 **Enjoy the Saudi Riyal Font!**  
+```
