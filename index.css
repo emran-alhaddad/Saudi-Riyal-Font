@@ -5,4 +5,13 @@
          url('fonts/saudi_riyal.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+  }
+  
+  /* Ensure the icon class correctly loads the Riyal symbol */
+  .icon-saudi_riyal::before {
+    content: "\e900";
+    font-family: 'saudi_riyal' !important;
+    font-size: inherit;
+    color: inherit;
+  }
+  
