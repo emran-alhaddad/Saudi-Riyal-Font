@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'saudi_riyal';
+    src: url('fonts/saudi_riyal.woff2') format('woff2'),
+         url('fonts/saudi_riyal.woff') format('woff'),
+         url('fonts/saudi_riyal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
