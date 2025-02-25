@@ -42,7 +42,7 @@ This font allows you to use the **Saudi Riyal symbol** in websites, applications
 
 **👥 Social**
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/EmranAlhaddad?style=social)](https://twitter.com/EmranAlhaddad)
+[![LinkedIn Follow](https://img.shields.io/badge/LinkedIn-Follow-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/emran-alhaddad/)
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red)](https://github.com/emran-alhaddad)
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/emran-alhaddad/Saudi-Riyal-Font)
 
