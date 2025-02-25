@@ -4,7 +4,7 @@
 
 This font allows you to use the **Saudi Riyal symbol** in websites, applications, and documents, ensuring compatibility where the symbol is not natively supported.  
 
-![Saudi Riyal Symbol](examples/saudi_riyal-sample.svg)
+![Saudi Riyal Symbol](examples/saudi_riyal-sample.jpg)
 
 ---
 
