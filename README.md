@@ -1,15 +1,3 @@
-### **🚀 Updated `README.md` with Live Demo & Screenshot**  
-
-This update ensures:
-✅ **Live demo link** is included.  
-✅ **Screenshot (`examples/example-demo.png`)** is displayed.  
-✅ **Clarification on proper font usage in CSS & HTML.**  
-✅ **Correction in attribution policy (attribution is now required).**  
-
----
-
-### **✅ `README.md`**
-```md
 # 🇸🇦 Saudi Riyal Font  
 
 **The official open-source font for the Saudi Riyal currency symbol.**  
