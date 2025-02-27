@@ -1,74 +1,378 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عرض خط الريال السعودي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+  
 </head>
-<body>
-
-    <div class="container">
-        <h1>عرض خط الريال السعودي</h1>
-        <p>يظهر هذا العرض التوضيحي كيفية استخدام رمز الريال السعودي باستخدام خط <strong>'saudi_riyal'</strong>.</p>
-
-        <!-- English Use Cases -->
-        <div class="use-case">
-            <h2>Basic Usage</h2>
-            <p class="riyals">Price: <span class="icon-saudi_riyal">100</span></p>
+<body class="bg-gray-50">
+    <!-- Theme Color Picker Panel -->
+    <div class="color-picker-panel" id="colorPickerPanel">
+        <div class="color-picker-toggle" id="colorPickerToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+            </svg>
         </div>
-
-        <div class="use-case">
-            <h2>Heading with Riyal Symbol</h2>
-            <h1 class="riyals">Total: <span class="icon-saudi_riyal">500</span></h1>
+        <h3 class="font-bold text-lg mb-3 text-center">تخصيص الألوان</h3>
+        
+        <div class="color-input-group">
+            <label for="primaryColorPicker">اللون الرئيسي</label>
+            <input type="color" id="primaryColorPicker" value="#2f704a" class="w-full h-8 rounded cursor-pointer">
         </div>
-
-        <div class="use-case">
-            <h2>Inline Text</h2>
-            <p>The total cost is <span class="icon-saudi_riyal">250</span> including taxes.</p>
+        
+        <div class="color-input-group">
+            <label for="accentColorPicker">لون التمييز</label>
+            <input type="color" id="accentColorPicker" value="#ffc107" class="w-full h-8 rounded cursor-pointer">
         </div>
-
-        <!-- Arabic Use Cases -->
-        <div class="use-case">
-            <h2>استخدام باللغة العربية</h2>
-            <p class="riyals">السعر: <span class="icon-saudi_riyal">١٠٠</span></p>
+        
+        <div class="color-input-group">
+            <label for="riyalColorPicker">لون الريال</label>
+            <input type="color" id="riyalColorPicker" value="#2f704a" class="w-full h-8 rounded cursor-pointer">
         </div>
-
-        <div class="use-case">
-            <h2>العنوان مع رمز الريال</h2>
-            <h1 class="riyals">المجموع: <span class="icon-saudi_riyal">٥٠٠</span></h1>
+        
+        <div class="color-input-group">
+            <label for="cardBgColorPicker">لون خلفية البطاقات</label>
+            <input type="color" id="cardBgColorPicker" value="#ffffff" class="w-full h-8 rounded cursor-pointer">
         </div>
-
-        <div class="use-case">
-            <h2>النص المضمّن</h2>
-            <p>التكلفة الإجمالية هي <span class="icon-saudi_riyal">٢٥٠</span> شامل الضريبة.</p>
-        </div>
-
-        <!-- Dynamic Font Size Control -->
-        <div class="use-case">
-            <h2>تعديل حجم الخط</h2>
-            <input type="range" id="fontSizeSlider" min="12" max="100" value="32">
-            <span id="fontSizeValue">٣٢px</span>
-            <p class="dynamic-text">الرصيد المتبقي: <span class="icon-saudi_riyal">١٢٠٠</span> </p>
-        </div>
-
-        <!-- Super and Subscript -->
-        <div class="use-case">
-            <h2>رفع وخفض النص</h2>
-            <button onclick="toggleSuperSub('super')">مرتفع</button>
-            <button onclick="toggleSuperSub('sub')">منخفض</button>
-            <p class="super-sub">الضريبة: <span class="icon-saudi_riyal"></span><span id="superSub">٥٠</span> </p>
-        </div>
-
-        <!-- Change Color -->
-        <div class="use-case">
-            <h2>تغيير لون الرمز</h2>
-            <input type="color" id="colorPicker" value="#2f704a">
-            <p>اختر لونًا لتطبيقه على رمز الريال السعودي.</p>
+        
+        <h4 class="font-bold text-sm mt-4 mb-2">ألوان مسبقة التعيين</h4>
+        <div class="preset-colors">
+            <div class="preset-color" style="background-color: #2f704a;" data-primary="#2f704a" data-accent="#ffc107" data-riyal="#2f704a"></div>
+            <div class="preset-color" style="background-color: #1e40af;" data-primary="#1e40af" data-accent="#f59e0b" data-riyal="#1e40af"></div>
+            <div class="preset-color" style="background-color: #7c3aed;" data-primary="#7c3aed" data-accent="#10b981" data-riyal="#7c3aed"></div>
+            <div class="preset-color" style="background-color: #be123c;" data-primary="#be123c" data-accent="#3b82f6" data-riyal="#be123c"></div>
+            <div class="preset-color" style="background-color: #0f766e;" data-primary="#0f766e" data-accent="#f43f5e" data-riyal="#0f766e"></div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold theme-primary-text mb-4">عرض خط الريال السعودي</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">يظهر هذا العرض التوضيحي كيفية استخدام رمز الريال السعودي باستخدام خط <strong>'saudi_riyal'</strong> مع تصميم بطاقات جذابة.</p>
+        </header>
 
+        <!-- Price Cards Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold theme-primary-text mb-6 text-center">باقات الأسعار</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan Card -->
+                <div class="theme-card-bg rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <div class="theme-primary-bg text-white p-6 text-center">
+                        <h3 class="text-xl font-bold">الباقة الأساسية</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-gray-800"><span class="icon-saudi_riyal">٩٩</span></span>
+                            <span class="text-gray-500 text-sm">/شهرياً</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>ميزة أساسية أولى</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>ميزة أساسية ثانية</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>ميزة متقدمة</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-3 theme-btn rounded-lg">
+                            اشترك الآن
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Premium Plan Card -->
+                <div class="theme-card-bg rounded-xl shadow-lg overflow-hidden transform scale-105 theme-primary-border ring-2">
+                    <div class="theme-primary-bg text-white p-6 text-center relative">
+                        <div class="absolute top-0 left-0 theme-accent-bg text-gray-800 text-xs font-bold px-3 py-1 rounded-br-lg">الأكثر شعبية</div>
+                        <h3 class="text-xl font-bold">الباقة المميزة</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-5xl font-bold text-gray-800"><span class="icon-saudi_riyal">١٩٩</span></span>
+                            <span class="text-gray-500 text-sm">/شهرياً</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>جميع الميزات الأساسية</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>ميزة متقدمة أولى</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>ميزة متقدمة ثانية</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-3 theme-btn rounded-lg">
+                            اشترك الآن
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan Card -->
+                <div class="theme-card-bg rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <div class="theme-primary-bg text-white p-6 text-center">
+                        <h3 class="text-xl font-bold">باقة الشركات</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-gray-800"><span class="icon-saudi_riyal">٣٩٩</span></span>
+                            <span class="text-gray-500 text-sm">/شهرياً</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>جميع الميزات المميزة</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>دعم فني على مدار الساعة</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 theme-primary-text ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>تخصيص كامل</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-3 theme-btn rounded-lg">
+                            اشترك الآن
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Cards Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold theme-primary-text mb-6 text-center">منتجاتنا</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="theme-card-bg rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute top-2 right-2 theme-primary-bg text-white text-sm font-bold px-3 py-1 rounded-full">
+                            جديد
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">منتج رقم ١</h3>
+                        <p class="text-gray-600 text-sm mb-4">وصف قصير للمنتج الأول مع بعض التفاصيل.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold theme-primary-text"><span class="icon-saudi_riyal">١٤٩</span></span>
+                            <button class="theme-btn px-3 py-1 rounded">
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="theme-card-bg rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                            خصم ٢٠٪
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">منتج رقم ٢</h3>
+                        <p class="text-gray-600 text-sm mb-4">وصف قصير للمنتج الثاني مع بعض التفاصيل.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-xl font-bold theme-primary-text"><span class="icon-saudi_riyal">١٩٩</span></span>
+                                <span class="text-sm text-gray-500 line-through mr-2"><span class="icon-saudi_riyal">٢٤٩</span></span>
+                            </div>
+                            <button class="theme-btn px-3 py-1 rounded">
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="theme-card-bg rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">منتج رقم ٣</h3>
+                        <p class="text-gray-600 text-sm mb-4">وصف قصير للمنتج الثالث مع بعض التفاصيل.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold theme-primary-text"><span class="icon-saudi_riyal">٢٩٩</span></span>
+                            <button class="theme-btn px-3 py-1 rounded">
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="theme-card-bg rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">منتج رقم ٤</h3>
+                        <p class="text-gray-600 text-sm mb-4">وصف قصير للمنتج الرابع مع بعض التفاصيل.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold theme-primary-text"><span class="icon-saudi_riyal">٣٤٩</span></span>
+                            <button class="theme-btn px-3 py-1 rounded">
+                                أضف للسلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Cards Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold theme-primary-text mb-6 text-center">خصائص الخط</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Feature Card 1 -->
+                <div class="theme-card-bg p-6 rounded-lg shadow-md theme-primary-border border-t-4 hover:shadow-lg transition-shadow">
+                    <h3 class="font-bold text-lg mb-3 theme-primary-text">تغيير الحجم</h3>
+                    <div class="mb-4">
+                        <input type="range" id="fontSizeSlider" min="12" max="100" value="32" class="w-full">
+                        <div class="flex justify-between text-xs text-gray-500">
+                            <span>صغير</span>
+                            <span id="fontSizeValue">٣٢px</span>
+                            <span>كبير</span>
+                        </div>
+                    </div>
+                    <p class="dynamic-text text-center p-4 theme-primary-light-bg rounded-lg">
+                        الرصيد المتبقي: <span class="icon-saudi_riyal">١٢٠٠</span>
+                    </p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="theme-card-bg p-6 rounded-lg shadow-md theme-primary-border border-t-4 hover:shadow-lg transition-shadow">
+                    <h3 class="font-bold text-lg mb-3 theme-primary-text">رفع وخفض النص</h3>
+                    <div class="flex justify-center gap-3 mb-4">
+                        <button onclick="toggleSuperSub('super')" class="theme-btn px-4 py-2 rounded">
+                            مرتفع
+                        </button>
+                        <button onclick="toggleSuperSub('sub')" class="theme-btn px-4 py-2 rounded">
+                            منخفض
+                        </button>
+                    </div>
+                    <p class="super-sub text-center p-4 theme-primary-light-bg rounded-lg">
+                        الضريبة: <span class="icon-saudi_riyal"></span><span id="superSub">٥٠</span>
+                    </p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="theme-card-bg p-6 rounded-lg shadow-md theme-primary-border border-t-4 hover:shadow-lg transition-shadow">
+                    <h3 class="font-bold text-lg mb-3 theme-primary-text">تغيير لون الرمز</h3>
+                    <div class="flex justify-center mb-4">
+                        <input type="color" id="riyalColorPicker" value="#2f704a" class="w-full h-10 rounded cursor-pointer">
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 text-center">
+                        <div class="p-2 theme-primary-light-bg rounded-lg">
+                            <span class="icon-saudi_riyal text-2xl">١٠٠</span>
+                        </div>
+                        <div class="p-2 theme-primary-light-bg rounded-lg">
+                            <span class="icon-saudi_riyal text-2xl">٢٠٠</span>
+                        </div>
+                        <div class="p-2 theme-primary-light-bg rounded-lg">
+                            <span class="icon-saudi_riyal text-2xl">٣٠٠</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Invoice Card Example -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold theme-primary-text mb-6 text-center">نموذج فاتورة</h2>
+            
+            <div class="theme-card-bg rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+                <div class="flex justify-between items-start mb-8">
+                    <div>
+                        <h3 class="font-bold text-xl mb-1">فاتورة #١٢٣٤٥</h3>
+                        <p id="date" class="text-gray-500 text-sm"></p>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-xl font-bold theme-primary-text">شركة نموذجية</div>
+                        <p class="text-sm text-gray-500">الرياض، المملكة العربية السعودية</p>
+                    </div>
+                </div>
+                
+                <div class="border-t border-b border-gray-200 py-4 mb-6">
+                    <div class="grid grid-cols-5 font-bold text-gray-700 mb-2">
+                        <div class="col-span-2">المنتج</div>
+                        <div class="text-center">الكمية</div>
+                        <div class="text-center">السعر</div>
+                        <div class="text-left">المجموع</div>
+                    </div>
+                    
+                    <div class="grid grid-cols-5 py-2 border-b border-gray-100">
+                        <div class="col-span-2">منتج رقم ١</div>
+                        <div class="text-center">٢</div>
+                        <div class="text-center"><span class="icon-saudi_riyal">١٤٩</span></div>
+                        <div class="text-left"><span class="icon-saudi_riyal">٢٩٨</span></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-5 py-2 border-b border-gray-100">
+                        <div class="col-span-2">منتج رقم ٢</div>
+                        <div class="text-center">١</div>
+                        <div class="text-center"><span class="icon-saudi_riyal">١٩٩</span></div>
+                        <div class="text-left"><span class="icon-saudi_riyal">١٩٩</span></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-5 py-2">
+                        <div class="col-span-2">منتج رقم ٣</div>
+                        <div class="text-center">١</div>
+                        <div class="text-center"><span class="icon-saudi_riyal">٢٩٩</span></div>
+                        <div class="text-left"><span class="icon-saudi_riyal">٢٩٩</span></div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end">
+                    <div class="w-1/2">
+                        <div class="flex justify-between py-2">
+                            <span>المجموع الفرعي:</span>
+                            <span><span class="icon-saudi_riyal">٧٩٦</span></span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span>ضريبة القيمة المضافة (١٥٪):</span>
+                            <span><span class="icon-saudi_riyal">١١٩.٤٠</span></span>
+                        </div>
+                        <div class="flex justify-between py-2 font-bold text-lg border-t border-gray-200 mt-2 pt-2">
+                            <span>الإجمالي:</span>
+                            <span class="theme-primary-text"><span class="icon-saudi_riyal">٩١٥.٤٠</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   <script src="script.js"></script>
 </body>
 </html>
