@@ -1,6 +1,6 @@
 {
   "name": "@emran-alhaddad/saudi-riyal-font",
-  "version": "1.0.2", 
+  "version": "1.0.3", 
   "description": "The official open-source font for the Saudi Riyal currency symbol.",
   "main": "index.css",
   "directories": {
