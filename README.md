@@ -1,3 +1,4 @@
+
 # 🇸🇦 Saudi Riyal Font  
 
 **A community-maintained open-source font for the Saudi Riyal currency symbol.**  
@@ -74,21 +75,21 @@ The easiest way to use this font in a web project is by installing it via NPM:
 
 ```sh
 npm install @emran-alhaddad/saudi-riyal-font
-```
+````
 
-Then, import it in your project:  
+Then, import it in your project:
 
 ```js
 import '@emran-alhaddad/saudi-riyal-font/index.css';
 ```
 
-Use it in HTML:  
+Use it in HTML:
 
 ```html
 <span class="icon-saudi_riyal"></span>
 ```
 
-Alternatively, insert the symbol using Unicode:  
+Alternatively, insert the symbol using Unicode:
 
 ```html
 <span style="font-family: 'saudi_riyal'">&#xE900;</span>
@@ -96,19 +97,22 @@ Alternatively, insert the symbol using Unicode:
 
 ---
 
-### **2️⃣ Web Usage via CDN (No Installation Needed)**  
+### **2️⃣ Web Usage via CDN (No Installation Needed)**
 
 #### **📌 Use jsDelivr CDN**
+
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@emran-alhaddad/saudi-riyal-font/index.css">
 ```
 
 #### **📌 Use unpkg CDN**
+
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@emran-alhaddad/saudi-riyal-font/index.css">
 ```
 
 #### **CDN HTML Example:**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -129,67 +133,122 @@ Alternatively, insert the symbol using Unicode:
 
 ---
 
-## 📝 Setup for Desktop & Mobile Devices  
+## 🧠 React Native / Expo Usage
 
-### **3️⃣ Download & Install on Windows, Mac, Linux, Android, iOS**  
-#### **📂 Download Saudi Riyal Font Files:**  
-📂 **[Download Saudi Riyal Font](https://github.com/emran-alhaddad/Saudi-Riyal-Font/blob/main/fonts/saudi_riyal.ttf)**  
+**Important note for React Native / Expo users**
 
-### **🖥 Windows Installation**  
-1. Download `saudi_riyal.ttf` from the link above.  
-2. Right-click the file and select **"Install"**.  
-3. Open **Microsoft Word, Photoshop, or any editor**, select **"Saudi Riyal"** as the font.  
-4. Type `E900` and press `Alt + X` to display the Saudi Riyal symbol.  
+The JavaScript entry point of this package uses the browser `URL` API to locate font assets. When running under React Native with the Hermes engine (for example, Expo SDK 53), the `URL` API is not implemented. This causes an error like:
 
-### **💻 Mac Installation**  
-1. Download `saudi_riyal.ttf` from the link above.  
-2. Double-click the file and select **"Install Font"**.  
-3. Open any text editor (e.g., Pages, Photoshop), select **"Saudi Riyal"** as the font.  
-4. Type `E900` to insert the Riyal symbol.  
+```
+ERROR [runtime not ready]: Error: URL.protocol is not implemented, js engine: hermes
+ERROR [runtime not ready]: Invariant Violation: "main" has not been registered.
+```
 
-### **🐧 Linux Installation**  
-1. Copy the font to your local fonts directory:  
+To use the Saudi Riyal Font in React Native or Expo:
+
+1. **Install a URL polyfill (recommended)**
+   Install [`react-native-url-polyfill`](https://github.com/zmotree/react-native-url-polyfill) and import it before any other code. This polyfills `URL.protocol` and related methods so Hermes can run code that depends on the `URL` API.
+
+   ```sh
+   npm install react-native-url-polyfill
+   ```
+
+   ```js
+   // In your entry file (e.g. index.js or App.tsx)
+   import 'react-native-url-polyfill/auto';
+   // ...rest of your imports
+   ```
+
+2. **Load the font file directly**
+   Alternatively, skip the JavaScript entry point of this package and load the `.ttf` file directly with `expo-font`:
+
+   ```js
+   import { useFonts } from 'expo-font';
+   // Adjust the path to the TTF file as needed
+   const [loaded] = useFonts({
+     SaudiRiyal: require('./node_modules/@emran-alhaddad/saudi-riyal-font/fonts/saudi_riyal.ttf'),
+   });
+   ```
+
+   Once the font is loaded, apply it by name in your styles.
+
+For more details or to track progress on React Native support, see [issue #19](https://github.com/emran-alhaddad/Saudi-Riyal-Font/issues/19).
+
+---
+
+### **3️⃣ Download & Install on Windows, Mac, Linux, Android, iOS**
+
+#### **📂 Download Saudi Riyal Font Files:**
+
+📂 **[Download Saudi Riyal Font](https://github.com/emran-alhaddad/Saudi-Riyal-Font/blob/main/fonts/saudi_riyal.ttf)**
+
+### **🖥 Windows Installation**
+
+1. Download `saudi_riyal.ttf` from the link above.
+2. Right-click the file and select **"Install"**.
+3. Open **Microsoft Word, Photoshop, or any editor**, select **"Saudi Riyal"** as the font.
+4. Type `E900` and press `Alt + X` to display the Saudi Riyal symbol.
+
+### **💻 Mac Installation**
+
+1. Download `saudi_riyal.ttf` from the link above.
+2. Double-click the file and select **"Install Font"**.
+3. Open any text editor (e.g., Pages, Photoshop), select **"Saudi Riyal"** as the font.
+4. Type `E900` to insert the Riyal symbol.
+
+### **🐧 Linux Installation**
+
+1. Copy the font to your local fonts directory:
+
    ```sh
    cp saudi_riyal.ttf ~/.fonts/
    fc-cache -fv
-   ```  
-2. Use it in applications that support custom fonts.  
+   ```
+2. Use it in applications that support custom fonts.
 
-### **🌐 Mobile Installation (Android & iOS)**  
-1. Download `saudi_riyal.ttf` to your phone.  
-2. **Android:** Use **iFont** or **FontFix** apps to install.  
-3. **iOS:** Install via **iFont** or a font management app.  
-4. Use in supported apps like Word, Photoshop, or Notes.  
+### **🌐 Mobile Installation (Android & iOS)**
 
----
-
-## 🌟 Development & Contributions  
-We welcome **contributions!** To contribute:  
-1. **Fork** this repository.  
-2. **Make your changes** (improve the font, add glyphs).  
-3. **Submit a Pull Request** for review.  
-
-If you find issues, please report them via the [Issues](https://github.com/emran-alhaddad/saudi-riyal-font/issues) section.  
+1. Download `saudi_riyal.ttf` to your phone.
+2. **Android:** Use **iFont** or **FontFix** apps to install.
+3. **iOS:** Install via **iFont** or a font management app.
+4. Use in supported apps like Word, Photoshop, or Notes.
 
 ---
 
-## 📚 License  
-This font is released under the **SIL Open Font License (OFL)**.  
-✅ **Attribution is required!**  
+## 🌟 Development & Contributions
 
-📌 **Created by:** **Emran Alhaddad**  
-📧 **Contact:** emran.alhaddad.dev@gmail.com  
+We welcome **contributions!** To contribute:
 
-📢 **Any usage, modification, or distribution must credit the original creator.**  
+1. **Fork** this repository.
+2. **Make your changes** (improve the font, add glyphs).
+3. **Submit a Pull Request** for review.
+
+If you find issues, please report them via the [Issues](https://github.com/emran-alhaddad/saudi-riyal-font/issues) section.
+
+---
+
+## 📚 License
+
+This font is released under the **SIL Open Font License (OFL)**.
+✅ **Attribution is required!**
+
+📌 **Created by:** **Emran Alhaddad**
+📧 **Contact:** [emran.alhaddad.dev@gmail.com](mailto:emran.alhaddad.dev@gmail.com)
+
+📢 **Any usage, modification, or distribution must credit the original creator.**
+
 ```
 Saudi Riyal Font © Emran Alhaddad - Used under SIL Open Font License 1.1
 ```
 
 ---
 
-## 📧 Contact  
-📩 For questions, feedback, or collaborations, reach out via [GitHub Issues](https://github.com/emran-alhaddad/saudi-riyal-font/issues) or email at **emran.alhaddad.dev@gmail.com**.  
+## 📧 Contact
+
+📩 For questions, feedback, or collaborations, reach out via [GitHub Issues](https://github.com/emran-alhaddad/saudi-riyal-font/issues) or email at **[emran.alhaddad.dev@gmail.com](mailto:emran.alhaddad.dev@gmail.com)**.
 
 ---
 
-🚀 **Enjoy the Saudi Riyal Font!**  
+🚀 **Enjoy the Saudi Riyal Font!**
+
+
