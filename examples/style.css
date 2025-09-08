@@ -5,7 +5,7 @@
       format("embedded-opentype"),
     url("../fonts/regular/saudi_riyal.ttf?bdfc4l") format("truetype"),
     url("../fonts/regular/saudi_riyal.woff?bdfc4l") format("woff"),
-    url("../fonts/regular/saudi_riyal.svg?bdfc4l#saudi_riyal") format("svg");
+    url("../fonts/saudi_riyal.svg?bdfc4l#saudi_riyal") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -18,7 +18,7 @@
       format("embedded-opentype"),
     url("../fonts/bold/saudi_riyal.ttf?bdfc4l") format("truetype"),
     url("../fonts/bold/saudi_riyal.woff?bdfc4l") format("woff"),
-    url("../fonts/bold/saudi_riyal.svg?bdfc4l#saudi_riyal") format("svg");
+    url("../fonts/saudi_riyal.svg?bdfc4l#saudi_riyal") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: block;
@@ -70,9 +70,26 @@ span {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* [class^="icon-"],
+[class*=" icon-"] {
+  font-family: "saudi_riyal_bold" !important;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
 /* Dynamic color support */
-.icon-saudi_riyal:before {
+/* .icon-saudi_riyal:before {
   content: "\e900";
+  color: var(--riyals-color, #2f704a);
+} */
+
+
+.icon-saudi_riyal:after {
+  content: "\20c1";
   color: var(--riyals-color, #2f704a);
 }
 

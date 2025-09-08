@@ -7,6 +7,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "saudi_riyal_bold";
+  src: url("fonts/bold/saudi_riyal.woff2") format("woff2"),
+    url("fonts/bold/saudi_riyal.woff") format("woff"),
+    url("fonts/bold/saudi_riyal.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* Ensure the icon class correctly loads the Riyal symbol */
 .icon-saudi_riyal::before {
   content: "\e900";
@@ -14,3 +23,25 @@
   font-size: inherit;
   color: inherit;
 }
+
+.icon-saudi_riyal_bold::before {
+  content: "\e900";
+  font-family: "saudi_riyal_bold" !important;
+  font-size: inherit;
+  color: inherit;
+}
+
+.icon-saudi_riyal_new::after {
+  content: "\20c1";
+  font-family: "saudi_riyal" !important;
+  font-size: inherit;
+  color: inherit;
+}
+
+.icon-saudi_riyal_bold_new::after {
+  content: "\20c1";
+  font-family: "saudi_riyal_bold" !important;
+  font-size: inherit;
+  color: inherit;
+}
+
