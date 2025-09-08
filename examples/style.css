@@ -1,39 +1,67 @@
 @font-face {
-  font-family: 'saudi_riyal';
-  src: url('../fonts/saudi_riyal.eot?bdfc4l');
-  src: url('../fonts/saudi_riyal.eot?bdfc4l#iefix') format('embedded-opentype'),
-      url('../fonts/saudi_riyal.ttf?bdfc4l') format('truetype'),
-      url('../fonts/saudi_riyal.woff?bdfc4l') format('woff'),
-      url('../fonts/saudi_riyal.svg?bdfc4l#saudi_riyal') format('svg');
+  font-family: "saudi_riyal";
+  src: url("../fonts/regular/saudi_riyal.eot?bdfc4l");
+  src: url("../fonts/regular/saudi_riyal.eot?bdfc4l#iefix")
+      format("embedded-opentype"),
+    url("../fonts/regular/saudi_riyal.ttf?bdfc4l") format("truetype"),
+    url("../fonts/regular/saudi_riyal.woff?bdfc4l") format("woff"),
+    url("../fonts/regular/saudi_riyal.svg?bdfc4l#saudi_riyal") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-
 @font-face {
-  font-family: 'JannaLTRegular';
-  src: url('fonts/ArbFONTS-ArbFONTS-Janna-LT-Regular.ttf') format('truetype');
+  font-family: "saudi_riyal_bold";
+  src: url("../fonts/bold/saudi_riyal.eot?bdfc4l");
+  src: url("../fonts/bold/saudi_riyal.eot?bdfc4l#iefix")
+      format("embedded-opentype"),
+    url("../fonts/bold/saudi_riyal.ttf?bdfc4l") format("truetype"),
+    url("../fonts/bold/saudi_riyal.woff?bdfc4l") format("woff"),
+    url("../fonts/bold/saudi_riyal.svg?bdfc4l#saudi_riyal") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
 }
 
 @font-face {
-  font-family: 'JannaLTBold';
-  src: url('fonts/ArbFONTS-ArbFONTS-Janna-LT-Bold.ttf') format('truetype');
+  font-family: "JannaLTRegular";
+  src: url("fonts/regular/ArbFONTS-ArbFONTS-Janna-LT-Regular.ttf")
+    format("truetype");
 }
 
 @font-face {
-  font-family: 'JannaLTSimple';
-  src: url('fonts/ArbFONTS-JannaLT-Regular.ttf') format('truetype');
+  font-family: "JannaLTBold";
+  src: url("fonts/regular/ArbFONTS-ArbFONTS-Janna-LT-Bold.ttf")
+    format("truetype");
 }
 
-p,h1,h2,h3,h4,h5,h6,a,strong,b,li,ul,button,span
-{
-  font-family: 'JannaLTRegular', Arial, sans-serif !important;
+@font-face {
+  font-family: "JannaLTSimple";
+  src: url("fonts/regular/ArbFONTS-JannaLT-Regular.ttf") format("truetype");
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+strong,
+b,
+li,
+ul,
+button,
+span {
+  font-family: "JannaLTRegular", Arial, sans-serif !important;
 }
 
 /* Icon styling */
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'saudi_riyal' !important;
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "saudi_riyal" !important;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -66,7 +94,11 @@ p,h1,h2,h3,h4,h5,h6,a,strong,b,li,ul,button,span
 
 /* Gradient background for the body */
 body {
-  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-light),
+    var(--primary-color)
+  );
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -108,7 +140,7 @@ body {
   left: 20px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 15px;
   z-index: 1000;
   width: 280px;
@@ -163,5 +195,7 @@ body {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }

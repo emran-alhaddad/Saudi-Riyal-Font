@@ -1,9 +1,8 @@
+# 🇸🇦 Saudi Riyal Font
 
-# 🇸🇦 Saudi Riyal Font  
+**A community-maintained open-source font for the Saudi Riyal currency symbol.**
 
-**A community-maintained open-source font for the Saudi Riyal currency symbol.**  
-
-This font allows you to use the **Saudi Riyal symbol** in websites, applications, and documents, ensuring compatibility where the symbol is not natively supported.  
+This font allows you to use the **Saudi Riyal symbol** in websites, applications, and documents, ensuring compatibility where the symbol is not natively supported.
 
 ![Saudi Riyal Symbol](examples/saudi_riyal-sample.jpg)
 
@@ -47,40 +46,43 @@ This font allows you to use the **Saudi Riyal symbol** in websites, applications
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red)](https://github.com/emran-alhaddad)
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/emran-alhaddad/Saudi-Riyal-Font)
 
-## 🌍 Live Demo  
-🎉 **Check out the live demo here:**  
-🔗 [Saudi Riyal Font Demo](https://emran-alhaddad.github.io/Saudi-Riyal-Font/examples/demo.html)  
+## 🌍 Live Demo
 
-Below is a screenshot of the example demo page:  
+🎉 **Check out the live demo here:**  
+🔗 [Saudi Riyal Font Demo](https://emran-alhaddad.github.io/Saudi-Riyal-Font/examples/demo.html)
+
+Below is a screenshot of the example demo page:
 
 ![Example Demo](examples/example-demo.png)
 
 ---
 
-## 📌 Features  
+## 📌 Features
+
 👉 **Cross-Platform Compatibility** – Works on Windows, macOS, Linux, Web, and Mobile.  
 👉 **Unicode Private Use Area (`U+E900`)** – Ensures seamless integration.  
 👉 **Web-Optimized** – Includes `.woff`, `.woff2`, and `.ttf` formats for fast loading.  
 👉 **NPM Support** – Easily install via NPM for web projects.  
 👉 **CDN Hosting** – Use without installation via **jsDelivr** or **unpkg**.  
 👉 **Open Source & Free** – Released under the **SIL Open Font License (OFL)**.  
-👉 **Customizable** – Modify and enhance as needed.  
+👉 **Customizable** – Modify and enhance as needed.
 
 ---
 
-## 💍 Installation & Usage  
+## 💍 Installation & Usage
 
-### **1️⃣ Install via NPM (Recommended for Web Developers)**  
-The easiest way to use this font in a web project is by installing it via NPM:  
+### **1️⃣ Install via NPM (Recommended for Web Developers)**
+
+The easiest way to use this font in a web project is by installing it via NPM:
 
 ```sh
 npm install @emran-alhaddad/saudi-riyal-font
-````
+```
 
 Then, import it in your project:
 
 ```js
-import '@emran-alhaddad/saudi-riyal-font/index.css';
+import "@emran-alhaddad/saudi-riyal-font/index.css";
 ```
 
 Use it in HTML:
@@ -102,13 +104,17 @@ Alternatively, insert the symbol using Unicode:
 #### **📌 Use jsDelivr CDN**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@emran-alhaddad/saudi-riyal-font/index.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@emran-alhaddad/saudi-riyal-font/index.css" />
 ```
 
 #### **📌 Use unpkg CDN**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@emran-alhaddad/saudi-riyal-font/index.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@emran-alhaddad/saudi-riyal-font/index.css" />
 ```
 
 #### **CDN HTML Example:**
@@ -116,18 +122,18 @@ Alternatively, insert the symbol using Unicode:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saudi Riyal Font Demo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@emran-alhaddad/saudi-riyal-font/index.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@emran-alhaddad/saudi-riyal-font/index.css" />
+  </head>
+  <body>
     <h1>Saudi Riyal Font Demo</h1>
     <p>Price: <span class="icon-saudi_riyal"></span> 100</p>
-
-</body>
+  </body>
 </html>
 ```
 
@@ -155,7 +161,7 @@ To use the Saudi Riyal Font in React Native or Expo:
 
    ```js
    // In your entry file (e.g. index.js or App.tsx)
-   import 'react-native-url-polyfill/auto';
+   import "react-native-url-polyfill/auto";
    // ...rest of your imports
    ```
 
@@ -163,10 +169,10 @@ To use the Saudi Riyal Font in React Native or Expo:
    Alternatively, skip the JavaScript entry point of this package and load the `.ttf` file directly with `expo-font`:
 
    ```js
-   import { useFonts } from 'expo-font';
+   import { useFonts } from "expo-font";
    // Adjust the path to the TTF file as needed
    const [loaded] = useFonts({
-     SaudiRiyal: require('./node_modules/@emran-alhaddad/saudi-riyal-font/fonts/saudi_riyal.ttf'),
+     SaudiRiyal: require("./node_modules/@emran-alhaddad/saudi-riyal-font/fonts/regular/saudi_riyal.ttf"),
    });
    ```
 
@@ -180,7 +186,7 @@ For more details or to track progress on React Native support, see [issue #19](
 
 #### **📂 Download Saudi Riyal Font Files:**
 
-📂 **[Download Saudi Riyal Font](https://github.com/emran-alhaddad/Saudi-Riyal-Font/blob/main/fonts/saudi_riyal.ttf)**
+📂 **[Download Saudi Riyal Font](https://github.com/emran-alhaddad/Saudi-Riyal-Font/blob/main/fonts/regular/saudi_riyal.ttf)**
 
 ### **🖥 Windows Installation**
 
@@ -201,9 +207,10 @@ For more details or to track progress on React Native support, see [issue #19](
 1. Copy the font to your local fonts directory:
 
    ```sh
-   cp saudi_riyal.ttf ~/.fonts/
+   cp saudi_riyal.ttf ~/.fonts/regular/
    fc-cache -fv
    ```
+
 2. Use it in applications that support custom fonts.
 
 ### **🌐 Mobile Installation (Android & iOS)**
@@ -250,5 +257,3 @@ Saudi Riyal Font © Emran Alhaddad - Used under SIL Open Font License 1.1
 ---
 
 🚀 **Enjoy the Saudi Riyal Font!**
-
-
