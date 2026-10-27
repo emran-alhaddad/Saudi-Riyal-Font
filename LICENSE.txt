@@ -5,11 +5,6 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 https://openfontlicense.org
 
-Attribution is appreciated but not required. If you would like to credit the
-project, this is the suggested form:
-
-    Saudi Riyal Font (c) Emran Alhaddad - SIL Open Font License 1.1
-
 -----------------------------------------------------------
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 -----------------------------------------------------------
