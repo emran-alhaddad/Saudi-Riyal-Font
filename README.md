@@ -257,7 +257,12 @@ If you find issues, please report them via the [Issues](https://github.com/emran
 
 ## 📚 License
 
-This font is released under the **SIL Open Font License (OFL)**.  Attribution is required.
+This font is released under the **SIL Open Font License, Version 1.1**, with
+Reserved Font Name "Saudi Riyal Font" — so you may use, embed, modify and
+redistribute it freely, including commercially. A derivative must be released
+under the OFL too, and must not use the reserved name as its primary font name.
+
+Attribution is appreciated but not required. If you would like to credit it:
 
 ```
 Saudi Riyal Font © Emran Alhaddad – Used under SIL Open Font License 1.1
